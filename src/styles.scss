@@ -1,1 +1,77 @@
-/* You can add global styles to this file, and also import other style files */
+/* Global responsive styling for mobile/tablet support */
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #fdfdfd;
+  color: #333;
+}
+
+section {
+  padding: 60px 20px;
+}
+
+h2 {
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+/* General Responsive Rules */
+@media (max-width: 992px) {
+  section {
+    padding: 40px 15px;
+  }
+
+  h2 {
+    font-size: 1.8rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar .nav-links {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .about-container,
+  .skills-grid,
+  .edu-cards,
+  .project-cards,
+  .timeline,
+  .pub-list,
+  form {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .profile-image {
+    width: 120px;
+  }
+
+  .card, .category, .job, .pub {
+    width: 100% !important;
+    max-width: 100%;
+  }
+
+  input,
+  textarea,
+  button {
+    width: 100%;
+    box-sizing: border-box;
+  }
+}
+
+@media (max-width: 480px) {
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  .navbar .logo {
+    font-size: 1.2rem;
+  }
+
+  .nav-links {
+    font-size: 0.9rem;
+  }
+}

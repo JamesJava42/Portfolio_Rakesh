@@ -1,0 +1,10 @@
+<section class="publications">
+  <h2>Publications</h2>
+  <div class="pub-list">
+    <div class="pub" *ngFor="let pub of publications">
+      <h3>{{ pub.title }}</h3>
+      <p><strong>{{ pub.year }}</strong> — {{ pub.description }}</p>
+      <a *ngIf="pub.link" [href]="pub.link" target="_blank">View Publication</a>
+    </div>
+  </div>
+</section>

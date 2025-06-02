@@ -1,0 +1,12 @@
+<section class="experience">
+  <h2>Work Experience</h2>
+  <div class="timeline">
+    <div class="job" *ngFor="let exp of experiences">
+      <h3>{{ exp.role }}</h3>
+      <p class="company">{{ exp.company }} • {{ exp.period }}</p>
+      <ul>
+        <li *ngFor="let duty of exp.duties">✔️ {{ duty }}</li>
+      </ul>
+    </div>
+  </div>
+</section>
