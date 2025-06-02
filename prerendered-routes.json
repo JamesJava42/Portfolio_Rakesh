@@ -1,0 +1,15 @@
+{
+  "routes": {
+    "/Portfolio_Rakesh": {},
+    "/Portfolio_Rakesh/about": {},
+    "/Portfolio_Rakesh/contact": {},
+    "/Portfolio_Rakesh/education": {},
+    "/Portfolio_Rakesh/experience": {},
+    "/Portfolio_Rakesh/footer": {},
+    "/Portfolio_Rakesh/hero": {},
+    "/Portfolio_Rakesh/navbar": {},
+    "/Portfolio_Rakesh/projects": {},
+    "/Portfolio_Rakesh/publications": {},
+    "/Portfolio_Rakesh/skills": {}
+  }
+}
