@@ -10,5 +10,11 @@ import { RouterModule } from '@angular/router';
   styleUrl: './navbar.scss'
 })
 export class Navbar {
+  closeMenu(menuToggle: HTMLInputElement): void {
+  if (menuToggle && menuToggle.checked) {
+    menuToggle.checked = false;
+  }
+}
+
 
 }
