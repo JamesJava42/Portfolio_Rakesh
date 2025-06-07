@@ -17,6 +17,7 @@ export class Contact {
     email: '',
     message: ''
   };
+messageSent: any;
 
  onSubmit(form: any) {
     const templateParams = {

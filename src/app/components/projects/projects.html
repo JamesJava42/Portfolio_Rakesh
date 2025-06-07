@@ -1,11 +1,45 @@
-<section class="projects">
-  <h2>My Projects</h2>
-  <div class="project-cards">
-    <div class="card" *ngFor="let project of projectList">
-      <h3>{{ project.title }}</h3>
-      <p>{{ project.description }}</p>
-      <p><strong>Technologies:</strong> {{ project.tech.join(', ') }}</p>
-      <a [href]="project.link" target="_blank">View on GitHub</a>
+<section class="projects" id="projects" style="background: linear-gradient(to right, #fcf9f9, #e9eff1); padding: 60px 20px;">
+  <h2 class="section-title" style="text-align: center; margin-bottom: 30px;">Projects</h2>
+  <div class="projects-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; max-width: 1000px; margin: auto;">
+    
+    <div class="project-card animate__animated animate__fadeInUp" style="padding: 25px; background: white; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
+      <h3 style="color: #3949ab;">Scalable Online Shopping System</h3>
+      <p style="color: #444; font-size: 0.96rem; line-height: 1.6;">
+        Designed a secure, cloud-native e-commerce platform using microservices with OAuth2-based RBAC, AWS ELB, RDS, and CloudWatch. Automated deployments with Jenkins and Bitbucket Pipelines using Docker & Kubernetes.
+      </p>
+      <ul style="list-style: none; padding: 0; margin-top: 10px; font-size: 0.85rem;">
+        <li style="background: #e3f2fd; display: inline-block; margin: 4px; padding: 4px 8px; border-radius: 6px;">Java</li>
+        <li style="background: #f3e5f5; display: inline-block; margin: 4px; padding: 4px 8px; border-radius: 6px;">Spring Boot</li>
+        <li style="background: #e8f5e9; display: inline-block; margin: 4px; padding: 4px 8px; border-radius: 6px;">AWS</li>
+        <li style="background: #fff3e0; display: inline-block; margin: 4px; padding: 4px 8px; border-radius: 6px;">Docker</li>
+        <li style="background: #e1f5fe; display: inline-block; margin: 4px; padding: 4px 8px; border-radius: 6px;">Kubernetes</li>
+      </ul>
     </div>
+
+    <div class="project-card animate__animated animate__fadeInUp animate__delay-1s" style="padding: 25px; background: white; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
+      <h3 style="color: #3949ab;">VR Educational Simulation</h3>
+      <p style="color: #444; font-size: 0.96rem; line-height: 1.6;">
+        Built an immersive VR simulation on Meta Quest 2 to teach electrostatics. Users interact with positive/negative charge spheres and observe real-time electric field changes with dynamic arrow grids.
+      </p>
+      <ul style="list-style: none; padding: 0; margin-top: 10px; font-size: 0.85rem;">
+        <li style="background: #ede7f6; display: inline-block; margin: 4px; padding: 4px 8px; border-radius: 6px;">Unity</li>
+        <li style="background: #e0f7fa; display: inline-block; margin: 4px; padding: 4px 8px; border-radius: 6px;">C#</li>
+        <li style="background: #fff9c4; display: inline-block; margin: 4px; padding: 4px 8px; border-radius: 6px;">Meta Quest 2</li>
+      </ul>
+    </div>
+
+    <div class="project-card animate__animated animate__fadeInUp animate__delay-2s" style="padding: 25px; background: white; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
+      <h3 style="color: #3949ab;">Real-Time Stock Control System</h3>
+      <p style="color: #444; font-size: 0.96rem; line-height: 1.6;">
+        Developed a distributed inventory system using Kafka and Spring Boot microservices with secure JWT-based access control. Optimized performance with Redis caching and JPA for seamless stock updates.
+      </p>
+      <ul style="list-style: none; padding: 0; margin-top: 10px; font-size: 0.85rem;">
+        <li style="background: #fce4ec; display: inline-block; margin: 4px; padding: 4px 8px; border-radius: 6px;">Spring Boot</li>
+        <li style="background: #dcedc8; display: inline-block; margin: 4px; padding: 4px 8px; border-radius: 6px;">Kafka</li>
+        <li style="background: #ffecb3; display: inline-block; margin: 4px; padding: 4px 8px; border-radius: 6px;">Docker</li>
+        <li style="background: #d1c4e9; display: inline-block; margin: 4px; padding: 4px 8px; border-radius: 6px;">Redis</li>
+      </ul>
+    </div>
+
   </div>
 </section>

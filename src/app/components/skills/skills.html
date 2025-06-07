@@ -1,11 +1,41 @@
-<section class="skills">
-  <h2>My Skills</h2>
-  <div class="skills-grid">
-    <div class="category" *ngFor="let category of skillCategories">
-      <h3>{{ category.title }}</h3>
-      <ul>
-        <li *ngFor="let skill of category.items">✔️ {{ skill }}</li>
-      </ul>
-    </div>
+<section class="skills animate__animated animate__fadeIn" id="skills" style="background: linear-gradient(to top right, #ffffff, #f2f5fc); padding: 60px 20px;">
+  <h2 class="section-title" style="text-align: center; margin-bottom: 40px;">Skills</h2>
+  <div class="skills-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 20px; max-width: 1000px; margin: auto;">
+    <!-- Updated Full Skill Set -->
+    <div class="skill-item animate__animated animate__bounceIn"><i class="fab fa-angular fa-2x" style="color: #dd0031;"></i><p>Angular</p></div>
+    <div class="skill-item animate__animated animate__bounceIn"><i class="fab fa-react fa-2x" style="color: #61DBFB;"></i><p>React</p></div>
+    <div class="skill-item animate__animated animate__bounceIn"><i class="fab fa-vuejs fa-2x" style="color: #42b883;"></i><p>Vue.js</p></div>
+    <div class="skill-item animate__animated animate__bounceIn"><i class="fab fa-node-js fa-2x" style="color: #68a063;"></i><p>Node.js</p></div>
+    <div class="skill-item animate__animated animate__bounceIn"><i class="fas fa-server fa-2x" style="color: #303f9f;"></i><p>Express.js</p></div>
+    <div class="skill-item animate__animated animate__bounceIn"><i class="fas fa-leaf fa-2x" style="color: #4caf50;"></i><p>MongoDB</p></div>
+    <div class="skill-item animate__animated animate__bounceIn"><i class="fab fa-java fa-2x" style="color: #f89820;"></i><p>Java</p></div>
+    <div class="skill-item animate__animated animate__bounceIn"><i class="fas fa-leaf fa-2x" style="color: #3f704d;"></i><p>Spring Boot</p></div>
+    <div class="skill-item animate__animated animate__bounceIn"><i class="fab fa-python fa-2x" style="color: #306998;"></i><p>Python</p></div>
+    <div class="skill-item animate__animated animate__bounceIn"><i class="fas fa-code fa-2x" style="color: #616161;"></i><p>Go</p></div>
+    <div class="skill-item animate__animated animate__bounceIn"><i class="fab fa-js fa-2x" style="color: #f0db4f;"></i><p>JavaScript</p></div>
+    <div class="skill-item animate__animated animate__bounceIn"><i class="fab fa-php fa-2x" style="color: #8892be;"></i><p>PHP</p></div>
+    <div class="skill-item animate__animated animate__bounceIn"><i class="fas fa-code fa-2x" style="color: #e44d26;"></i><p>TypeScript</p></div>
+    <div class="skill-item animate__animated animate__bounceIn"><i class="fab fa-cuttlefish fa-2x" style="color: #00599c;"></i><p>C++</p></div>
+    <div class="skill-item animate__animated animate__bounceIn"><i class="fab fa-cuttlefish fa-2x" style="color: #512bd4;"></i><p>C#</p></div>
+    <div class="skill-item animate__animated animate__bounceIn"><i class="fab fa-aws fa-2x" style="color: #ff9900;"></i><p>AWS</p></div>
+    <div class="skill-item animate__animated animate__bounceIn"><i class="fab fa-docker fa-2x" style="color: #0db7ed;"></i><p>Docker</p></div>
+    <div class="skill-item animate__animated animate__bounceIn"><i class="fas fa-project-diagram fa-2x" style="color: #326ce5;"></i><p>Kubernetes</p></div>
+    <div class="skill-item animate__animated animate__bounceIn"><i class="fas fa-tools fa-2x" style="color: #757575;"></i><p>Terraform</p></div>
+    <div class="skill-item animate__animated animate__bounceIn"><i class="fas fa-cogs fa-2x" style="color: #d32f2f;"></i><p>Jenkins</p></div>
+    <div class="skill-item animate__animated animate__bounceIn"><i class="fas fa-robot fa-2x" style="color: #ef6c00;"></i><p>TensorFlow</p></div>
+    <div class="skill-item animate__animated animate__bounceIn"><i class="fas fa-brain fa-2x" style="color: #6a1b9a;"></i><p>PyTorch</p></div>
+    <div class="skill-item animate__animated animate__bounceIn"><i class="fas fa-microscope fa-2x" style="color: #283593;"></i><p>Scikit-learn</p></div>
+    <div class="skill-item animate__animated animate__bounceIn"><i class="fas fa-magic fa-2x" style="color: #2e7d32;"></i><p>OpenAI</p></div>
+    <div class="skill-item animate__animated animate__bounceIn"><i class="fas fa-random fa-2x" style="color: #e53935;"></i><p>GraphQL</p></div>
+    <div class="skill-item animate__animated animate__bounceIn"><i class="fab fa-figma fa-2x" style="color: #a259ff;"></i><p>Figma</p></div>
+    <div class="skill-item animate__animated animate__bounceIn"><i class="fab fa-git-alt fa-2x" style="color: #f1502f;"></i><p>Git</p></div>
+    <div class="skill-item animate__animated animate__bounceIn"><i class="fab fa-unity fa-2x" style="color: #222c37;"></i><p>Unity</p></div>
+    <div class="skill-item animate__animated animate__bounceIn"><i class="fas fa-cube fa-2x" style="color: #e91e63;"></i><p>Blender</p></div>
+    <div class="skill-item animate__animated animate__bounceIn"><i class="fas fa-database fa-2x" style="color: #4479A1;"></i><p>MySQL</p></div>
+    <div class="skill-item animate__animated animate__bounceIn"><i class="fas fa-database fa-2x" style="color: #336791;"></i><p>PostgreSQL</p></div>
+    <div class="skill-item animate__animated animate__bounceIn"><i class="fas fa-memory fa-2x" style="color: #a41e11;"></i><p>Redis</p></div>
+    <div class="skill-item animate__animated animate__bounceIn"><i class="fas fa-chart-line fa-2x" style="color: #fbc02d;"></i><p>Power BI</p></div>
+    <div class="skill-item animate__animated animate__bounceIn"><i class="fab fa-wordpress fa-2x" style="color: #00749c;"></i><p>WordPress</p></div>
+    <div class="skill-item animate__animated animate__bounceIn"><i class="fab fa-shopify fa-2x" style="color: #96bf48;"></i><p>Shopify</p></div>
   </div>
 </section>

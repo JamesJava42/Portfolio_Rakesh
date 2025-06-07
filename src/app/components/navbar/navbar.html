@@ -1,54 +1,16 @@
 <nav class="navbar">
   <div class="nav-container">
-    <!-- Logo -->
     <a class="logo" routerLink="/">Rakesh</a>
-
-    <!-- Menu toggle checkbox and hamburger icon -->
     <input type="checkbox" id="menu-toggle" class="menu-toggle" #menuToggle>
     <label for="menu-toggle" class="hamburger">&#9776;</label>
 
-    <!-- Navigation Links -->
     <ul class="nav-links">
-      <li>
-        <a routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }" (click)="closeMenu(menuToggle)">
-          Home
-        </a>
-      </li>
-      <li>
-        <a routerLink="/about" routerLinkActive="active" (click)="closeMenu(menuToggle)">
-          About
-        </a>
-      </li>
-      <li>
-        <a routerLink="/skills" routerLinkActive="active" (click)="closeMenu(menuToggle)">
-          Skills
-        </a>
-      </li>
-      <li>
-        <a routerLink="/education" routerLinkActive="active" (click)="closeMenu(menuToggle)">
-          Education
-        </a>
-      </li>
-      <li>
-        <a routerLink="/projects" routerLinkActive="active" (click)="closeMenu(menuToggle)">
-          Projects
-        </a>
-      </li>
-      <li>
-        <a routerLink="/experience" routerLinkActive="active" (click)="closeMenu(menuToggle)">
-          Experience
-        </a>
-      </li>
-      <li>
-        <a routerLink="/publications" routerLinkActive="active" (click)="closeMenu(menuToggle)">
-          Publications
-        </a>
-      </li>
-      <li>
-        <a routerLink="/contact" routerLinkActive="active" (click)="closeMenu(menuToggle)">
-          Contact
-        </a>
-      </li>
+      <li><a routerLink="/" (click)="closeMenu(menuToggle)" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">Home</a></li>
+      <li><a routerLink="/about" (click)="closeMenu(menuToggle)" routerLinkActive="active">About</a></li>
+      <li><a routerLink="/skills" (click)="closeMenu(menuToggle)" routerLinkActive="active">Skills</a></li>
+      <li><a routerLink="/projects" (click)="closeMenu(menuToggle)" routerLinkActive="active">Projects</a></li>
+      <li><a routerLink="/experience" (click)="closeMenu(menuToggle)" routerLinkActive="active">Experience</a></li>
+      <li><a routerLink="/contact" (click)="closeMenu(menuToggle)" routerLinkActive="active">Contact</a></li>
     </ul>
   </div>
 </nav>

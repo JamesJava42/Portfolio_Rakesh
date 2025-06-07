@@ -1,12 +1,36 @@
-<section class="experience">
-  <h2>Work Experience</h2>
-  <div class="timeline">
-    <div class="job" *ngFor="let exp of experiences">
-      <h3>{{ exp.role }}</h3>
-      <p class="company">{{ exp.company }} • {{ exp.period }}</p>
-      <ul>
-        <li *ngFor="let duty of exp.duties">✔️ {{ duty }}</li>
+<section class="experience" id="experience" style="background: linear-gradient(to right, #f2fcfe, #d9f2f7); padding: 60px 20px;">
+  <h2 class="section-title" style="text-align: center; margin-bottom: 30px;">Experience</h2>
+  <div class="experience-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; max-width: 1000px; margin: auto;">
+    
+    <div class="experience-card animate__animated animate__fadeInUp" style="padding: 25px; background: white; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
+      <h3 style="color: #3949ab;">Technical Developer</h3>
+      <p style="font-size: 0.9rem; color: #666; margin: 5px 0 15px 0;">California State University, Dominguez Hills | Sep 2023 – Present</p>
+      <p style="color: #444; font-size: 0.95rem; line-height: 1.6;">
+        Developed web-based and VR applications for education and research. Led Agile sprints, testing, and version control efforts. Conducted STEM workshops teaching AI, machine learning, and coding to K–12 students.
+      </p>
+      <ul style="list-style: none; padding: 0; margin-top: 10px; font-size: 0.85rem;">
+        <li style="background: #e3f2fd; display: inline-block; margin: 4px; padding: 4px 8px; border-radius: 6px;">Unity</li>
+        <li style="background: #ede7f6; display: inline-block; margin: 4px; padding: 4px 8px; border-radius: 6px;">Git</li>
+        <li style="background: #fce4ec; display: inline-block; margin: 4px; padding: 4px 8px; border-radius: 6px;">JIRA</li>
+        <li style="background: #fff9c4; display: inline-block; margin: 4px; padding: 4px 8px; border-radius: 6px;">XR Toolkit</li>
       </ul>
     </div>
+
+    <div class="experience-card animate__animated animate__fadeInUp animate__delay-1s" style="padding: 25px; background: white; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
+      <h3 style="color: #3949ab;">Backend Developer</h3>
+      <p style="font-size: 0.9rem; color: #666; margin: 5px 0 15px 0;">Vanna Infotech | Apr 2021 – Jul 2023</p>
+      <p style="color: #444; font-size: 0.95rem; line-height: 1.6;">
+        Developed scalable microservices using Spring Boot, Go, and Kafka. Built CI/CD pipelines and enhanced performance with Redis and SQL optimization. Integrated security via OAuth2 and JWT, and enabled real-time monitoring with Prometheus and Grafana.
+      </p>
+      <ul style="list-style: none; padding: 0; margin-top: 10px; font-size: 0.85rem;">
+        <li style="background: #ffe0b2; display: inline-block; margin: 4px; padding: 4px 8px; border-radius: 6px;">Spring Boot</li>
+        <li style="background: #c8e6c9; display: inline-block; margin: 4px; padding: 4px 8px; border-radius: 6px;">Kafka</li>
+        <li style="background: #e1f5fe; display: inline-block; margin: 4px; padding: 4px 8px; border-radius: 6px;">Docker</li>
+        <li style="background: #ede7f6; display: inline-block; margin: 4px; padding: 4px 8px; border-radius: 6px;">Jenkins</li>
+        <li style="background: #f8bbd0; display: inline-block; margin: 4px; padding: 4px 8px; border-radius: 6px;">Redis</li>
+        <li style="background: #fff3e0; display: inline-block; margin: 4px; padding: 4px 8px; border-radius: 6px;">Terraform</li>
+      </ul>
+    </div>
+
   </div>
 </section>
